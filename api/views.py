@@ -39,7 +39,7 @@ class PostListCreateView(generics.ListCreateAPIView):
 
     filterset_fields = {
         'owner__username': ['exact'],
-        'created_at': ['year', 'month', 'day', 'gt', 'lt']
+        'created_at': ['date', 'year', 'month', 'day', 'gt', 'lt']
     }
 
     search_fields = [
